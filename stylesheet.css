@@ -5,28 +5,86 @@
     box-sizing: border-box;
 }
 
-/* Set a base font style */
-html {
-    background-color: beige;
-}
-
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background-color: beige;
-}
-
-/* Utility class for centering content */
-.center {
-    display: flex;
+    background-color: lightpink;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+.product-container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: white;
+    border-radius: 15px
+}
 /* Basic styling for links */
+img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px 0 0 15px;
+    object-fit: contain;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;    
+}
+
+h1 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    width: 80%;
+    line-height: 1.1;
+    color: hsl(158, 42%, 18%);
+    filter: brightness(0.7);
+}
+
+p {
+    font-size: 18px;
+    padding-bottom: 20px;
+    width: 85%;
+    letter-spacing: 0.5px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+
+.original-price {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #999;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -41,9 +99,10 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: hsl(158, 36%, 37%);
     color: white;
     cursor: pointer;
+    height: 50px;
 }
 
 button:hover {
