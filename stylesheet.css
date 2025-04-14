@@ -27,7 +27,7 @@ body {
 }
 /* Basic styling for links */
 img {
-    width: 400px;
+    width: 401px;
     height: auto;
     border-radius: 15px 0 0 15px;
     object-fit: contain;
@@ -36,23 +36,29 @@ img {
 section {
     display: flex;
     flex-direction: column;
-    padding: 38px;
+    padding: 44px 40px;
     border-radius: 0 15px 15px 0;
     background-color: white;
     width: 400px;
     height: 100%;
     justify-content: center;
-    gap: 20px;    
+    gap: 22px;    
 }
 
 h1 {
     font-size: 18px;
-    padding-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    letter-spacing: 5px;
 }
 
 h2 {
     font-size: 40px;
-    padding-bottom: 20px;
+    font-family: "Fraunces", serif;
+    padding-bottom: 18px;
     width: 80%;
     line-height: 1.1;
     color: hsl(158, 42%, 18%);
@@ -61,9 +67,10 @@ h2 {
 
 p {
     font-size: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     width: 85%;
     letter-spacing: 0.5px;
+    color: hsl(228, 12%, 48%);
 }
 
 .price-container {
@@ -75,6 +82,7 @@ p {
 
 .price {
     font-size: 36px;
+    font-family: "Fraunces", serif;
     font-weight: bold;
     color: hsl(158, 36%, 37%);
 }
@@ -96,15 +104,28 @@ a:hover {
 
 /* Placeholder for reusable button styles */
 button {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    height: 50px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: hsl(158, 36%, 37%);
-    color: white;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    height: 50px;
+
+}
+
+button > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: hsl(158, 42%, 18%);
 }
